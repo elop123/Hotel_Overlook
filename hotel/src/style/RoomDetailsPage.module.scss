@@ -1,0 +1,156 @@
+.container {
+  padding: 20px;
+  font-family: 'Open Sans';
+  max-width: 800px;
+  margin: auto;
+}
+.card {
+  display: flex;
+  gap: 20px;
+  padding: 1rem;
+  background-color: #fff;
+  font-family: 'Open Sans';
+  flex-wrap: wrap; 
+}
+.image {
+  width: 100%; 
+  max-width: 300px;
+  padding: 0.5rem;
+  height: auto;
+  object-fit: cover; 
+}
+.content {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+.title {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+.area {
+  font-size: 16px;
+  color: #666;
+}
+.description {
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  color: #444;
+}
+.price {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+}
+.facilitiesHeading {
+  font-size: 14px;
+  //margin: 20px 0 10px 0;
+  font-weight: bold;
+}
+.facilitySection {
+  display: flex;
+  flex-wrap: wrap; 
+  //margin: 1rem 0;
+  gap: 10px; 
+}
+.facilitiesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.facility {
+  font-size: 14px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+}
+.priceOptions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  margin-top: 20px;
+  flex-wrap: wrap; 
+   margin: auto;
+   //margin-left: 2rem;
+}
+.priceBox {
+  border: 2px solid darkgray;
+  border-radius: 8px;
+  background-color: lightgray;
+  padding: 1rem;
+  text-align: center;
+  width: 80%; 
+  max-width: 260px; 
+  margin: 0 auto; 
+}
+.priceOptionTitle {
+  font-size: 16px;
+  font-weight: bold;
+ 
+}
+.priceOptionText {
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0;
+  text-align: left;
+}
+.priceValue {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+.bookButton {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.bookButton:hover {
+  background-color: #cc0000; 
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; 
+    align-items: center;
+  }
+  .image {
+    max-width: 100%;
+    margin: auto 0;
+  }
+  .priceBox {
+    //flex: 1 1 100%; 
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px; 
+  }
+  .priceBox {
+    padding: 0.5rem;
+    width: 80%; 
+    font-size: 12px;
+  }
+ 
+  .facilitiesList {
+    gap: 5px; 
+  }
+  .facility {
+    padding: 5px; 
+  }
+  
+}

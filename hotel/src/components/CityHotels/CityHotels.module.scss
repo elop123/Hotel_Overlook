@@ -1,0 +1,54 @@
+.hotelsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 20px;
+    width: 80%;
+    //margin: auto;
+    margin-left: 4.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Open Sans';
+    cursor: pointer;
+  }
+  
+  .countryDescription {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: left;
+  }
+  
+  
+  .hotelCard {
+    background: #fff;
+    text-align: center;
+    width: 80%;
+    margin: auto 0;
+    
+  }
+  
+  .hotelImage {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 10px;
+   
+  }
+  
+  .hotelTitle {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  
+  @media(max-width:768px){
+  .hotelsContainer{
+    margin-left:4rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .hotelCard{
+    overflow-x: hidden;
+  }
+  }

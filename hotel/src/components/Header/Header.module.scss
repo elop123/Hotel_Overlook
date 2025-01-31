@@ -1,0 +1,56 @@
+@use '../../helpers/variables';
+
+.headerImg{
+    width: 100%;
+    display: block;
+    height: 460px;
+    position: relative;
+}
+.title{
+    width: 560px;
+    position: absolute;
+    top:50%;
+    transform: translateX(50%, -50%);
+    color: #FFFFFF;
+    opacity: 1;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    letter-spacing: 43;
+    margin-left:5.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 0px 0px 40px 0px;
+    text-transform: uppercase;
+}
+.redLine{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 480px;
+    height: 10px;
+    background-color: #ff4d4d;
+    border-radius: 0px 0px 20px 0px;
+    opacity: 0.7;
+}
+
+@media(max-width:768px){
+    .headerImg{
+        height: 300px;
+    }
+    .title{
+        width: 350px;
+        margin-top: 4rem;
+        font-size: 1rem;
+        margin-left: 4rem;
+    }
+    .redLine{
+        width: 300px;
+    }
+}
+
+@media(max-width:480px){
+ .headerImg{
+    height: 200px;
+ }
+}

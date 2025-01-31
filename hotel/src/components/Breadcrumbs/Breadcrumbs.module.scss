@@ -1,0 +1,17 @@
+.breadcrumbs{
+    margin-left:4.5rem;
+    font-family:'Open Sans';
+    padding:1rem;
+    margin-bottom:1rem; 
+    font-size:14px; 
+    color: #555; 
+    text-transform:capitalize;
+ }
+
+
+ @media(max-width:768px){
+    .breadcrumbs{
+        margin-left: 4.5rem;
+    }
+ 
+ }

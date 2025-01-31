@@ -1,0 +1,144 @@
+
+.hotelContainer {
+  padding: 20px;
+  font-family: "Open Sans";
+  margin-left: 4.5rem;
+  width: 80%;
+  cursor: pointer;
+  .breadcrumbs {
+    margin-bottom: 20px;
+  }
+
+  .description{
+    margin-bottom: 2rem;
+    margin-left: 4.5rem;
+  }
+  .title{
+    font-family: "Open Sans";
+    color: #444; 
+    margin-bottom:10px; 
+    margin-left:4.5rem;
+  }
+
+  .hotelInfo{
+    font-family: "Open Sans";
+    display: grid; 
+    gap:20px; 
+    //width:80%; 
+    margin:auto;
+  }
+  .hotelSection{
+        display: flex;
+        align-items:flex-start;
+        gap:20px;
+        padding:20px;
+        background-color:white;
+        width: 80%;
+        font-family: "Open Sans";
+        margin-left: 4.5rem;
+        //height: 200px;
+        flex-wrap: wrap;
+  }
+ 
+  .hotelImg{
+        width:320px;
+        height:150px;
+        object-fit:cover;
+        
+    }
+    .roomTitle{
+        //margin: 0 0 10px 0;
+        font-family: "Open Sans";
+        color:#444;
+    }
+ 
+ .area{
+    //margin: 0 0 10px 0;
+    font-family:'Open Sans';
+    color: #444;
+ }
+.text{
+    color:#555;
+    font-family:'Open Sans';
+    padding-top:1rem;
+}
+.price{
+    font-family: "Open Sans";
+    text-align: right;
+    padding-top: 1rem;
+}
+.expandButton{
+        display: flex;
+        justify-content: center;
+        align-content:center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border:none;
+        background:none;
+}
+.roomDetails{
+    display:block;
+    margin-top:10px;
+    padding:10px;
+    text-align:left;
+    //margin-left: -14rem;
+}
+.roomDescription{
+    font-size:14px;
+    margin-bottom:20px;
+    color:#444;
+}
+.facilitiesList{
+    padding:1rem;
+    //margin-right:2px;
+    gap: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.facility{
+    font-size:14px;
+    margin-bottom:5px;
+  }
+
+}
+
+
+@media(max-width:768px){
+  .hotelContainer{
+    margin:auto 0;
+    
+  }
+  .hotelImg{
+    margin: auto ;
+  }
+.facilitiesList{
+  grid-template-columns: repeat(2, 1fr);
+}
+.text{
+  width: 85%;
+  margin: auto;
+ }
+ .price{
+  margin-right: 1.5rem;
+ }
+}
+
+@media(max-width:480px){
+  .hotelDetails{
+    margin-left: 4rem;
+   }
+   .roomTitle{
+    margin:auto ;
+   }
+   .hotelImg{
+    margin-left: -1rem;
+   }
+   .hotelSection{
+    width: 50%;
+   }
+   .text{
+    width: 70%;
+   }
+}

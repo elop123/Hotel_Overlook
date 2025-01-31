@@ -1,0 +1,39 @@
+.countryBarStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f3f3; 
+    box-shadow: inset 0px 2px 7px 6px rgba(0, 0, 0, 0.1); 
+    border-bottom: 1px solid lightgray;
+    margin: auto;
+    margin-top: -5px;
+    border-radius: 10px 2px 2px 0px;
+    flex-wrap: wrap;
+  }
+  
+  .countryItem {
+    margin: 0 15px; 
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  
+    &:hover {
+      color: #d32f2f; 
+      transform: scale(1.1); 
+    }
+  }
+  
+  .title {
+    font-size: 16px; 
+    color: #333333;
+    text-align: center;
+    font-weight: normal;
+    transition: color 0.3s ease;
+    font-family: 'Open Sans';
+  
+    &:hover {
+      color: #d32f2f; 
+    }
+  }
+  
+ 

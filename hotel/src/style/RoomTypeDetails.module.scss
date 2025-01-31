@@ -1,0 +1,75 @@
+
+.roomDetails {
+  padding: 20px;
+  font-family: "Open Sans";
+  .breadcrumb-container {
+    margin-bottom: 20px;
+  }
+.title {
+    font-family: "Open Sans";
+    margin-left: 7.5rem;
+    padding: 1rem 0;
+
+    @media (max-width: 768px) {
+      margin-left: 2rem;
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      margin-left: 1rem;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+
+  .imageContainer {
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    margin-left: 7.5rem;
+
+    .img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      width: 90%;
+      margin-left: 2rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+      margin-left: 0;
+      justify-content: center;
+    }
+  }
+
+  .description,
+  .price, 
+  .area {
+    padding: 1rem;
+    font-family: "Open Sans";
+    margin-left: 7rem;
+    width: 70%;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      margin-left: 2rem;
+      width: 90%;
+    }
+
+    @media (max-width: 480px) {
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+}
